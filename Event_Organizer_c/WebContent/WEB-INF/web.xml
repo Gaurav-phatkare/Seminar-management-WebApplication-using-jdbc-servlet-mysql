@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Event_Organizer_a</display-name>
+	
+	<error-page>
+	<exception-type>java.lang.Exception</exception-type>
+	<location>/errorSeminar.jsp</location>
+	</error-page>
+	
+
+	
+	<servlet>
+	<servlet-name>semTableServlet</servlet-name>
+	<servlet-class>seminardatatable.SeminarTableServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+	<servlet-name>semTableServlet</servlet-name>
+	<url-pattern>/new</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>semTableServlet</servlet-name>
+	<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>semTableServlet</servlet-name>
+	<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>semTableServlet</servlet-name>
+	<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>semTableServlet</servlet-name>
+	<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>semTableServlet</servlet-name>
+	<url-pattern>/insert</url-pattern></servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>AdminSemTableServlet</servlet-name>
+	<servlet-class>adminSeminarInterface.AdminInterfaceServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>AdminSemTableServlet</servlet-name>
+	<url-pattern>/newF</url-pattern>
+</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminSemTableServlet</servlet-name>
+		<url-pattern>/listS</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminSemTableServlet</servlet-name>
+		<url-pattern>/updateS</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminSemTableServlet</servlet-name>
+		<url-pattern>/deleteS</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminSemTableServlet</servlet-name>
+		<url-pattern>/editF</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminSemTableServlet</servlet-name>
+		<url-pattern>/insertS</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
